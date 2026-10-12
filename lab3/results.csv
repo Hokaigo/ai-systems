@@ -1,0 +1,16 @@
+Model,Description,Context_Len,Layers,Heads,Best_Val_Loss,Best_Iter
+v1_base,Base,64,2,4,5.7208,1999
+v2_context,+Context,128,2,4,5.7222,1999
+v3_layers,+Layers,64,4,4,5.6141,1999
+v4_heads,+Heads,64,2,8,5.7474,1999
+v5_iters,+Iters,64,2,4,5.7212,2999
+v6_max,Max Config,128,4,8,5.6181,1999
+
+
+=== Models from Section 5 ===
+Model,Setting,Params,Time (s),BLEU
+Helsinki-NLP,Base,"76,195,328",3.4176,44.6
+Facebook M2M100,Base,"483,905,536",10.6261,66.39
+Facebook M2M100,num_beams=5,"483,905,536",12.909,66.39
+Facebook M2M100,max_length=10,"483,905,536",3.0206,2.9
+Facebook M2M100,temperature=1.5,"483,905,536",13.7089,58.84
